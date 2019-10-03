@@ -1,0 +1,39 @@
+{
+  "name": "l3tum/cached-aws-transport",
+  "description": "AWS Credential Cache for Elastica",
+  "keywords": [
+    "search",
+    "client",
+    "cache"
+  ],
+  "homepage": "http://elastica.io/",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nicolas Ruflin",
+      "homepage": "http://ruflin.com/"
+    },
+    {
+      "name": "L3tum"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "ruflin/elastica": "^6.1",
+    "aws/aws-sdk-php": "^3.112"
+  },
+  "require-dev": {
+    "guzzlehttp/guzzle": "~6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Elastica\\": "lib/Elastica/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Elastica\\Test\\": "test/Elastica/"
+    }
+  }
+}
